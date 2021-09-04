@@ -1,0 +1,41 @@
+<%- include("./partials/header") %>
+
+<main>
+    <div class="container" id="table">
+        <h5>Listagem dos To-Do</h5>
+        <div class="card">
+            <table id="tabela" class="table table-striped" style="width:100%">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITULO</th>
+                    <th>COMPLETADO</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <% if (typeof apiResponse != 'undefined') { %>                        
+                   
+                    <% apiResponse.forEach((post) => { %>
+                        <tr>
+                            <td><%= post.id %></td>
+                            <td><%= post.title %></td>
+                            <td><%= post.completed %></td>
+                         </tr>
+                       
+                    <% }); %>
+                    <% } %>
+                 </tbody>
+                <tfoot>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITULO</th>
+                        <th>COMPLETADO</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</main>
+
+<%- include("./partials/footer") %>

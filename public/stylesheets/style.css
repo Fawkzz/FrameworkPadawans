@@ -1,0 +1,86 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer .icone2{
+    margin-left: 20px;
+}
+
+footer .icone1{
+    margin-right: 20px;
+}
+
+nav{
+    
+    
+}
+
+header .btn{
+    background-color: #5F3473;
+    color: #e0f2f1;
+}
+
+header .btn:hover{
+    background-color: #a075b4;
+    color: #e0f2f1;
+}
+
+
+.container .card{
+    padding: 30px;
+}
+
+.container h5{
+    margin-bottom: 10px;
+}
+.tabs{
+    margin-top: 50px;
+}
+
+.tabs .tab a:focus{
+    background-color: #e0f2f1;
+}
+
+
+.tabs .tab a:focus.active{
+    background-color: #e0f2f1;
+}
+
+.tabs .indicator{
+    background-color: #4db6ac;
+}
+
+#table{
+    height: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: auto;
+}
+
+header li a{
+    color: #5F3473; 
+    font-weight: 600;   
+}
+
+header li a:hover{
+    color: white;
+    background-color: #7d5e8b; 
+}
+
+footer li a, h5{
+    color: #b8b8b8;
+}
+
+.icones img{
+    margin: 30px;
+}
